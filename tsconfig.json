@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "types": ["node", "@wdio/globals/types", "@wdio/mocha-framework"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "decorators",
+      "dom",
+      "es5",
+      "scripthost",
+      "es2015.collection"
+    ]
+  }
+}

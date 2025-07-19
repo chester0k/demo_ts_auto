@@ -1,0 +1,26 @@
+{
+  "default": {
+    "paths": [
+      "tests/cucumber/features"
+    ],
+    "backtrace": true,
+    "publishQuiet": true,
+    "dryRun": false,
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "format": [
+      "html:reports/cucumber-report.html",
+      "progress-bar"
+    ],
+    "requireModule": [
+      "ts-node/register"
+    ],
+    "require": [
+      "tests/cucumber/steps/*.ts",
+      "tests/cucumber/hooks.ts",
+      "framework"
+    ],
+    "parallel": 5
+  }
+}

@@ -1,0 +1,14 @@
+image: node:latest
+
+stages: # List of stages for jobs, and their order of execution
+  - build
+
+build-job: # This job runs in the build stage, which runs first.
+  stage: build
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+
+  script:
+    - npm install
+    - npm install -g typescript
+    - tsc
